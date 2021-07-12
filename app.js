@@ -13,7 +13,9 @@ while (multiple <= endMultiple){
     while (count < ceiling) {
        console.log(count);
         count = multiplier(count,multiple);
-        
+        if (count > ceiling){
+            count++;
+        }
     }
 
   ceiling += 100;
